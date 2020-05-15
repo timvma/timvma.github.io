@@ -1,0 +1,238 @@
+/** MODAL ********************************************/
+
+
+.wrapModal {
+    transform: translateX(-100%);
+    opacity:0;
+}
+
+
+.scrolling {
+   overflow: hidden;
+  }
+
+//  BUTTON 
+.modalClose {
+    position: absolute;
+    left:0;
+    cursor: pointer;
+    
+    display: block;
+	background-color: transparent;
+    color: $color1;
+    
+	outline: none;
+    z-index: 1;
+    font-family: $font3;
+    font-size: 20pt;
+    &:after{
+        content:'arrow_back_ios';
+    }
+}
+
+
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 150;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-content {
+    background-color: #000;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    width:90vw;
+    padding:5vw;
+    height: 100%;
+    max-height: 100%;
+
+    box-shadow: 0px 0px 500px #000;
+    transform: translateX(110%);
+
+    
+
+    overflow: auto;
+    will-change: transform;
+    
+    pointer-events: auto;   
+
+    .overlay {
+        position: absolute;
+        z-index: -1;
+        opacity:0.2;
+        font-size:10em;
+    } 
+	
+}
+
+.modal--visible {
+    pointer-events: auto;
+}
+.modal--visible .modal-content {
+    transform: translateX(0);
+}
+
+.modal--animatable .modal-content {
+    transition: all 500ms ease-in;
+}
+
+.modal--visible .modal--animatable  .modal-content {
+    transition: all 500ms ease-out;
+}
+.modal--visible .modal:after {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+//BODY **********************
+.body--visible {
+    transform: translateX(-100%);
+}
+
+.body--animatable {
+    transition: all 500ms ease-in;
+}
+
+.body--visible .body--animatable  {
+    transition: all 500ms ease-out;
+}
+
+
+#intro{
+    .modal-content{
+        display: grid;
+        grid-template-columns: 400px 1fr 1fr;
+        grid-gap:20px;
+    
+    }
+   
+}
+
+@media all and (max-width: 780px){
+    #intro{
+        .modal-content {
+            section:nth-child(2){
+                background: #987 !important;
+    
+            }
+        }
+    }
+}
+  
+/*
+//  MODAL 
+.modal { 
+    position: fixed; 
+    top: 0;
+    left:0;
+    z-index: 9;
+
+	width: 100%; 
+    height: 100%; 
+    transition: all 500ms ease-in;
+    font-family: $font1;
+    font-size: 18pt;
+    transform:translateX(100%);
+    opacity: 0;
+    overflow: hidden;
+   visibility: hidden;
+    
+    .modal-content {
+        display: flex;
+        flex-direction: row;
+        color:$color1;
+        transition: opacity 250ms ease-in-out;
+        width:90vw;
+        padding:5vw;
+        height: 100%;
+        max-height: 100%;
+        justify-content: center;
+        align-items: center;
+     
+        overflow: auto;
+      
+      
+        div{
+            padding: 20px;
+        }
+        .overlay {
+            position: absolute;
+            z-index: -1;
+            opacity:0.2;
+            font-size:10em;
+        }
+    }
+}
+
+ .modalActive{
+    transform:translateX(0%);
+    visibility: visible;
+    opacity: 1;
+    position: fixed; 
+    top:0;left:0;
+    transition: transform 500ms ease-in-out;
+    background: $color2 ;
+   // box-shadow: 0px 0px 500px 100px $color2;
+
+   
+}
+
+
+
+
+
+#contacts {
+   div{
+        flex-basis: 100%;
+    }
+    
+	ul {
+		li {
+            width: 100%;
+            padding:10px;
+		}
+	}
+
+
+  }
+
+  #daichi {
+
+    
+    .project-image{
+        width: fit-content;
+        height:50%;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        display: flex;
+        flex-wrap: nowrap;
+
+        img {
+            display: inline-block;
+            
+      
+            padding:10px;
+            height: 100%;
+            width:auto;
+        }
+    }
+  }
+  
+  */

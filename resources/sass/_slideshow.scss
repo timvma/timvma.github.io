@@ -1,0 +1,26 @@
+
+
+.slideshow {
+    background: #213;
+  
+   ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
+       
+       li {
+        flex: 0 0 auto;
+        background: #123;
+        padding:10px;
+        
+           a {
+               display: block;
+               background: #151;
+               height: 25vw;
+               width:25vw;
+             
+           }
+       }
+   } 
+} 

@@ -1,1 +1,359 @@
-qwewe
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>TimVma</title>
+<meta charset="utf-8">
+<meta name="description" content="Tim Vma Portfolio Test">
+<meta name="keywords" content="timvma, Tim, profile">
+<meta name="author" content="Tim Vma">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+
+<link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+	
+<!------------------------ NAV ---->	
+	<nav id="mySidenav" class="sidenav" role="navigation">
+		<a href="javascript:void(0)" class="closebtn" onclick="nav()">&times;</a>
+		<a href="/"><object type="image/svg+xml" data="images/logo.svg">Your browser does not support SVGs</object></a>
+		<div>
+			<a href="#about" onclick="nav()">About</a>
+			<a href="#project" onclick="closeNav()">Projects</a>
+			<a href="#skills" onclick="nav()">Skills</a>
+			<a href="#footer" onclick="nav(); modal('contacts');">Contact</a>
+		</div>
+	</nav>
+				
+	
+<div id='wrapps' class='wrapper'>
+<!------------------------ NAV ---->
+
+
+<nav  class='main-nav'>
+	<i id='navbar' onclick="nav()" ></i>
+</nav>
+
+<!------------------------ HERO ---->	
+	<div class="hero">
+		<div class="hero-text"> 
+			<p><i class="typewriter">JACK OF<br>ALL TRADES<br>MASTER <br>OF NONE</i><br></p>
+			
+		
+          	  <a class='btnBox' href='project'>Projects </a>
+
+		</div>
+		
+	</div>
+<!------------------------ INTRO ---->	
+	<div class="intro">
+		<div class="intro-wrap">
+			<span class='intro-bar'></span>
+			<div class="intro-center">
+			<span>Read More</span>
+					<img onclick='modal("intro")' src='images/2.jpg' alt=''> 
+
+			</div>
+				
+		
+		
+			<div class="intro-left">
+					
+				<h6>私</h6>
+
+
+				<p>
+					First of all, Thank You for visiting my website, Welcome my Name is Tim Ambi
+					I'm that $person who loves coding and creating designs<br><br>
+
+					I want to be an IT Engineer here in Japan.I'm working at a Car manufacturing and teaching myself to speak Japanese . 
+					<br><br>
+
+				I am passionate in creating something from scratch, THE TWO FIELDS WHICH I'D LOVE TO STAY MORE INVOLVED IN AND KEEP ABOUT. CONTINUE TO GROW AND IMPROVE EVERY DAY!
+
+				</p>
+			</div>
+			<div class="intro-right">
+				<p>日本にITエンジニアに成りたいです、今は工場に働いています、自分で日本語を勉強やています． <br><br>
+
+					声はしばしば話されます。 肥沃で肥沃な村では、女性も準備ができていません。 これは、どれくらい時間がかかるかというケースです。 <br><br>
+
+					招待は不快な驚きであり、友情の好きな絆です。 感情は特に否定的です。 彼は彼が繰り返すという見通しを受け取った。
+					<br><br>
+					それでは、ダッシュウッドは、家主を与えた考えてみましょう。私たちはしばしば声を持っています。実り乳房村の女性を用意します。この時点でそれが取ると同じくらいの秋。友情として不愉快な驚きを招待。マインド、特にネガティブなもの。それは再び自分自身を繰り返しています。<br><br>
+
+					<label  class='openModal' onclick='openModal("intro")'>Read More</label><br><br>
+				</p>
+			</div>
+		</div>
+	</div>
+<!------------------------ ABOUT ---->	
+	<div id='about' class="about">
+		<div>
+			<h6 class='heading'>ABOUT</h6>
+			
+			<object type="image/svg+xml" data="{{asset('images/about.svg')}}">Your browser does not support SVGs</object>
+		</div>
+		<div>	
+			<h6 class='letter'>M</h6>
+			<p>
+				Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce webapp, customer web portal, documentary launch website, and donations webapp for a local charity.<br><br>  Passionate about software architecture and cloud computing. Regular attendee of web developer meetups and hackathons.
+			</p>
+		</div>
+		<div>
+			<h6 class='letter'>I</h6>
+			<p>I am Tim Ambi a man of passion and a mind of innovation. Posessing skills that produce finese. <br><br>To create amazing binary art a <br><br>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices </p>
+		</div>
+		<div>
+			<img src="{{asset('images/4.jpg')}}" alt="Breaking Borders Logo">
+		</div>
+
+	</div>
+<!------------------------ PROJECT ---->	
+	<div id='project' class="portfolio">
+		<div>
+			<h6 class='heading'>PROJECTS</h6>
+			<p> Everything is Meaningful and Require a lot of Effort to reach the goals, regardless of the prerequisite you are looking to meet. Let me help you reach your goals. Here are some of the projects I've worked at.<br><br></p>
+			<a href="{{ url('/projects') }}" class='link1'>View More</a>
+			
+		</div>	
+
+		<div class="image-box"><a onclick="modal('daichi')" ><img src="{{asset('images/www_06.jpg')}}" alt="" ></a><label for="">第一<p>Instajob</p></label></div>
+		<div class="image-box"><a href="{{ url('/projects/crazetrip') }}"><img src="{{asset('images/www_06.jpg')}}" alt="" ></a><label for="">第二<p>CrazeTrip</p></label></div>
+		<div class="image-box"><a href="{{ url('/projects/jardenil') }}"><img src="{{asset('images/www_06.jpg')}}" alt="" ></a><label for="">第三<p>VirtuoSearch  </p></label></div>
+
+		
+
+		
+
+	</div>
+<!------------------------ SKILLS ---->	
+	<div id="skills" class="skills" > 
+		<div>
+			<h6 class='heading'>STATS</h6>
+			<p>Here are some skills I have gained through out the years, language and techniques that I've used to develop several projects. <br> </p>
+	
+			<object style='position:sticky;top:100px;transition:1s;' type="image/svg+xml" data="{{asset('images/radar.svg')}}">Your browser does not support SVGs</object>
+		</div>
+
+		<div>
+		
+			<button class="accordion">CODING </button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:60%;'>PHP</label></li>
+					<li title=''><label style='--skill-level:90%;'>HTML / CSS</label></li>
+					<li title=''><label style='--skill-level:60%;'>MYSQL</label></li>
+					<li title=''><label style='--skill-level:35%;'>JAVASCRIPT</label></li>
+					<li title=''><label style='--skill-level:25%;'>DART</label></li>
+					<li title=''><label style='--skill-level:25%;'>JQUERY</label></li>
+					<li title=''><label style='--skill-level:9%;'>JAVA</label></li>
+				</ul>
+			</div>
+
+			<button class="accordion">GRAPHICS</button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:88%;'>PHOTOSHOP</label></li>
+					<li title=''><label style='--skill-level:45%;'>ILLUSTRATOR</label></li>
+					<li title=''><label style='--skill-level:76%;'>LIGHTROOM</label></li>
+				</ul>
+			</div>
+
+			<button class="accordion">MULTIMEDIA</button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:90%;'>PREMIERE PRO</label></li>
+					<li title=''><label style='--skill-level:64%;'>AFTER EFFECTS</label></li>
+					<li title=''><label style='--skill-level:30%;'>BLENDER</label></li>
+
+				</ul>
+			</div>
+
+			<button class="accordion">PC </button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:60%;'>PC HARDWARE</label></li>
+					<li title=''><label style='--skill-level:80%;'>SOFTWARE</label></li>
+					<li title=''><label style='--skill-level:80%;'>NETWORK HARDWARE</label></li>
+	
+				</ul>
+			</div>	
+			
+			<button class="accordion">FRAMEWORK</button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:60%;'>LARAVEL</label></li>
+					<li title=''><label style='--skill-level:80%;'>WORDPRESS</label></li>
+					<li title=''><label style='--skill-level:80%;'>YII2</label></li>
+					<li title=''><label style='--skill-level:60%;'>FLUTTER</label></li>
+					<li title=''><label style='--skill-level:30%;'>MATERIALIZE</label></li>
+					<li title=''><label style='--skill-level:30%;'>BOOTSTRAP</label></li>
+					<li title=''><label style='--skill-level:30%;'>SASS</label></li>
+				</ul>
+			</div>				
+				
+			<button class="accordion">LANGUAGE</button>
+			<div class="panel">
+				<ul>
+					<li title=''><label style='--skill-level:98%;'>ENGLISH</label></li>
+					<li title=''><label style='--skill-level:100%;'>TAGALOG</label></li>
+					<li title=''><label style='--skill-level:45%;'>JAPANESE</label></li>
+		
+				</ul>
+			</div>	
+			<p class='txtHide'>Nimi beatae blanditiis cumque delectus doloremque totam voluptate iusto! Amet illum veritatis quia impedit?</p><br>
+		</div>
+
+	</div>
+<!------------------------ FOOTER ---->	
+	<footer class="footer">
+		<a class='navi-open' href='#' title='click'></a>
+		<p>All Rights Reserved © <?=date('Y')?> Tim Ambi</p>
+		<p>Front-end: Vanilla js/css | Back-end: Laravel</p>
+
+
+
+	</footer>
+
+
+</div>
+
+
+
+
+
+
+
+<!------------------------ MODAL ---->	
+
+<div class='modal' id='intro'>
+	<button  class='modalClose' onclick="modal('intro')"><i class='material-icons'>clear</i></button>
+	<div class='modal-content'>
+	
+		<div>
+		
+			<h6>私</h6>
+			<p>I want to be an IT Engineer here in Japan.I'm working at a Car manufacturing and teaching myself to speak Japanese . 
+				elit at imperdiet. Facilisis volutpat est velit egestas.<br><br>
+					Orci eu lobortis elementum nibh tellus. Fames ac turpis egestas sed tempus urna et. Turpis in eu mi bibendum.  semper  nam libero. Lectus mauris ultrices eros in cursus turpis.<br><br>
+					Integer enim neque volutpat ac tincidunt vitae semper quis. Sed viverra tellus in hac habitasse platea. Id  a  vitae sapien. Donec ac odio tempor orci dapibus ultrices. Nisi porta lorem mollis aliquam ut porttitor leo a. Orci ac auctor augue mauris.
+					
+			</p>
+		</div>
+
+		<div>
+			<p>日本にITエンジニアに成りたいです、今は工場に働いています、自分で日本語を勉強やています． <br><br>
+				声はしばしば話されます。 肥沃で肥沃な村では、女性も準備ができていません。 これは、どれくらい時間がかかるかというケースです。 <br><br>
+				招待は不快な驚きであり、友情の好きな絆です。 感情は特に否定的です。 彼は彼が繰り返すという見通しを受け取った。
+				<br><br>
+				それでは、ダッシュウッドは、家主を与えた考えてみましょう。私たちはしばしば声を持っています。実り乳房村の女性を用意します。この時点でそれが取ると同じくらいの秋。友情として不愉快な驚きを招待。マインド、特にネガティブなもの。それは再び自分自身を繰り返しています。<br><br>
+				Read More proin sagittis.<br><br>
+			</p>
+			
+		</div>
+	
+	</div>
+
+</div>
+
+
+<div class='modal ' id='contacts'>
+	<button  class='modalClose' onclick="modal('contacts')"><i class='material-icons'>clear</i></button>
+	<div class='modal-content'>
+			<div>
+			<h6 class='heading'>CONTACTS</h6>
+			<object type="image/svg+xml" data="{{asset('images/about.svg')}}">Your browser does not support SVGs</object>	
+			<label class='leading'>Social</label>
+
+			<ul >
+					<li><a class='link1' href="">@timambi</a></li>
+					<li><a class='link1' href="">Instagram</a></li>
+					<li><a class='link1' href="">GitHub</a></li>
+				</ul>
+				
+			</div>
+		
+			<div>
+				<p><br><br> 
+				So are you looking for a software engineer with wide set of skills? <br>
+				If you have an application you are interested in developing, a problem that needs solving,<br><br>
+				 I'd love to help you with it.
+
+				</p>
+				
+				<ul >
+				
+					<li>Phone<i class="material-icons">smartphone</i><a href="">070 -3965 -3546</a></li><br>
+					<li><label for=""><i class="material-icons">email</i></label><a href="">timawbi@gmail.com</a></li><br>
+					<li><label for=""><i class="material-icons">message</i></label><a href="https://www.fb.com/timambi">Facebook Messenger</a></li><br>
+				</ul>
+				
+			
+			</div>
+			
+		
+	
+	</div>
+
+</div>
+
+
+
+
+<div class='modal ' id='daichi'>
+	<button  class='modalClose' onclick="modal('daichi')"><i class='material-icons'>clear</i></button>
+	<div class='modal-content'>
+
+		<div>
+			<h6 class=''> Instajob</h6>
+			
+			<label for="">YEAR</label>
+			<p>2020</p>
+
+			<label for="">ROLE</label>
+			<a href='#'>Web Design</p>
+			
+			<label for="">LINK</label>
+			<a href='#'>www.www.com</p>
+
+
+		</div>
+	
+		
+				
+	
+		
+		<div>
+			<img src="{{asset('images/www.jpg')}}" alt="">		
+
+		</div>
+			
+		
+	
+	</div>
+</div>
+
+
+<script>
+
+function nav() {
+	document.getElementById('mySidenav').classList.toggle("sideNavActive");
+	document.getElementById('navbar').classList.toggle("active");
+}
+
+function modal(modalID){
+    document.getElementById(modalID).classList.toggle("modalActive");
+    document.getElementById('wrapps').classList.toggle("wrapModal");
+ 
+}
+
+</script>
+<script src="{{asset('js/app.js')}}"></script>
+
+</body>
+</html>

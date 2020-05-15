@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Stardos+Stencil);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP);
+@import url(https://use.typekit.net/ayz3jyb.css);
+@import url(https://use.typekit.net/ayz3jyb.css);
+
+$font1: "adobe-caslon-pro", serif;
+$font2: "Roboto", sans-serif;
+$font3: 'Material Icons';
+$font4:  'Stardos Stencil', cursive;
+$font5:  'Noto Serif JP', serif;;
+
+$color1: #fff;
+$color2: #000;
+$color3: #0e2636;
+$color4: #dfdfdf;
+$color5: #333;
+/*
+.revealer{
+	opacity: 0;
+	transition: opacity ease-in 500ms !important;
+}
+*/
+
+
+html{
+	background: $color2;
+	scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar {width: 6px;  }
+
+
+::-webkit-scrollbar-track{background: #333;}
+
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5);}
+
+
+
+body {
+	background-image: url('../images/7min.jpg') , url('../images/27min.jpg')  ;
+	background-position:top center, bottom center;
+	background-repeat: no-repeat, no-repeat;
+	background-size:100%,100%;
+	background-color: $color2;
+	color:$color1;
+
+}
+
+
+img {
+	width:100%;
+	height:auto;
+}
+
+.wrapper {
+	max-width: 1366px;
+	padding:0 10%;
+	width:60vw;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+
+
+//BUTTON ***********************************
+.btn1 {
+	background:transparent;
+	width:100%;
+	padding:10px;
+	text-align: center;
+	color: $color5;
+	border:3px $color5 solid;
+}
+
+.btn2 {
+	display: block;
+	width: 60%;
+	font-size: inherit;
+	padding: 10px 20px;
+	
+	margin:10px auto;
+	text-align: center;
+	border: 1px solid transparent ;
+
+	position: relative;
+	transition:all 500ms ease;
+	&:hover {
+
+		border: 1px solid $color1;
+		border-radius: 5px;
+		transition:all 500ms ease;
+	}
+}
+
+//TEXT ***********************************
+.heading {
+	font-family: $font1;
+	font-size: 14pt ;
+	letter-spacing: 25pt;
+	text-align: center;
+	text-indent: 20pt;
+	padding-bottom:10%;
+	text-transform: uppercase;
+}
+
+.leading {
+	font-family: $font1;
+	display: inline-block;
+	width: 100%;
+	border-bottom: $color1 1px solid;
+}
+
+.txtHide {
+	font-size: 12pt;
+	color:$color5;
+	transition: ease 0.5s;
+	&:hover {
+		color: $color1;
+	}
+}
+
+.bar-text {
+	background:$color1;
+	color:$color2;
+	padding:2px 5px;
+	display: block;
+	text-align: center;
+}
+
+
+
+.link1 {
+	transition: 1s ease;
+	text-align: center;
+
+}
+.link1:hover {
+	border-bottom: 1px solid $color1;
+	transition: 250ms ease;
+
+}
+
+//LIST ***********************************
+.list1 {
+	li {
+		opacity: 0.8;
+		width: 100%;
+		display: inline-block;
+		label {
+			float:left;
+		}
+		p{
+			float: right;
+		}
+		&:hover {
+			opacity: 1;
+
+		}
+	
+	}
+}
+
+.longTable {
+	p {
+		float: right;
+	}
+}
+
+.box-list {
+	border: solid 1px #fff;
+	padding:2px 5px;
+	display: flex;
+	i{flex-grow: 1;}
+	p{flex-grow: 8;}
+	span {flex-grow: 1; font-size: 20pt;}
+}
+.box-empty{
+	border: solid 1px #fff;
+	//padding:2px 5px;
+	height:36px;
+	display:block;
+}
+
+
+
+
+/** ACCORDION ********************************************/
+.accordion {
+	background-color: transparent;
+	font-family:$font2;
+	letter-spacing: 10pt;
+	color: $color1;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid $color1;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	i {
+		float: right;
+	}
+  }
+  
+
+  .accordion:after {
+	font-family: $font3;  
+	content: 'expand_more';
+	color: $color1;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	
+  }
+  
+  .active:after {
+	content: "expand_less";
+  }
+  
+  .panel {
+	max-height: 0;
+	width:95%;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 200ms ease-out;
+  }
+
+
+
