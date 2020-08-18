@@ -1,0 +1,28 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1236 2540" style="enable-background:new 0 0 1236 2540;" xml:space="preserve" width="1236" height="2540">
+<style type="text/css">
+	.st0{font-family:'MyriadPro-Regular';}
+	.st1{font-size:12px;}
+	.st2{fill:#37383C;}
+	.st3{fill:#1A1A1A;}
+	.st4{fill:url(#SVGID_1_);}
+</style>
+<text transform="matrix(1 0 0 1 618 1222.8203)" class="st0 st1">3315.5 px</text>
+<path class="st2" d="M1236,192.8c0-51.5-20.4-99.9-56.8-136.4C1142.7,20,1094,0,1042.4,0H193.7C142.2,0,93.3,20,56.9,56.5
+	S0,141.3,0,192.8v2153.6c0,51.5,20.4,100.3,56.9,136.7c36.4,36.4,85.3,56.8,136.8,56.8h848.7c51.5,0,100.3-20.4,136.7-56.8
+	c36.5-36.5,56.8-85.2,56.8-136.7V192.8z"/>
+<path d="M1042.4,2519.6H193.6c-95.4,0-172.8-77.4-172.8-172.8V193.2c0-95.4,77.4-172.8,172.8-172.8h848.7
+	c95.4,0,172.8,77.4,172.8,172.8v2153.6C1215.2,2442.2,1137.8,2519.6,1042.4,2519.6z"/>
+<rect x="78" y="310" class="st2" width="1080" height="1920"/>
+<circle class="st3" cx="618" cy="126.7" r="12"/>
+<path class="st2" d="M710,188H526c-4.4,0-8-3.6-8-8v0c0-4.4,3.6-8,8-8h184c4.4,0,8,3.6,8,8v0C718,184.4,714.4,188,710,188z"/>
+<circle class="st3" cx="443" cy="180" r="15"/>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="625.9873" y1="2440.8188" x2="609.0051" y2="2299.7725">
+		<stop  offset="0" style="stop-color:#37383C"/>
+		<stop  offset="0.9985" style="stop-color:#000000"/>
+	</linearGradient>
+	<circle class="st4" cx="618" cy="2374.5" r="71"/>
+	<circle cx="618" cy="2374.5" r="62.1"/>
+</g>
+</svg>
