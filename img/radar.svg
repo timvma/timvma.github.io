@@ -32,13 +32,12 @@
 <g id="Layer_1">
 	<g class="st0">
 		<text x='290' y='42'>FRONTEND</text>
-		<text x='500' y='180'>GRAPHICS</text>
-		<text x='500' y='430'>FRAMEWORK</text>
-		<text x='290' y='570'>BACKEND</text>
-		<text x='60'  y='430'>TOOLS</text>
-		<text x='60'  y='180'>UI / UX</text>
-		
-		
+		<text x='500' y='180'></text>
+		<text x='500' y='430'>BACKEND</text>
+		<text x='290' y='570'></text>
+		<text x='60'  y='430'>GRAPHICS</text>
+		<text x='60'  y='180'></text>
+
 	</g>
 
 	<defs>
@@ -63,7 +62,9 @@
 	345 111.6,
 	399 229,
 	260.8 "/>
-	
+
+
+
 	<g id="pentagon">
 	<g id="PENT">
 		<polyline class="st4 ew" points="497.7,415.9 497.7,176.1 82.3,415.9 290,535.8 		"/>
